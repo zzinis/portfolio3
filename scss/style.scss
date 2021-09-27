@@ -177,3 +177,94 @@
         margin: 0 auto;
     }
 }
+
+#footer{
+    width: 100%;
+    padding: 100px 40px;
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+
+        .top{
+            width: 100%;
+            display: inline-block;
+            &::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+            h1{
+                float: left;
+                a{
+                    display: block;
+                    font: bold 28px/1 'Frank Ruhl Libre';
+                    color: #111;
+                    margin-bottom: 30px;
+                }
+            }
+            .sns{
+                float: right;
+                li{
+                    display: inline-block;
+                    margin-right: 20px;
+
+                    a{
+                        font-size: 20px;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+        .info{
+            float: left;
+            margin-bottom: 30px;
+            &::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+            p{
+                font: 16px/1 'Heebo';
+                color: #000000;
+                margin-bottom: 10px;
+            }
+            span{
+                font: 16px/1 'Heebo';
+                color: #000000;
+                display: block;
+                margin-bottom: 30px;
+            }
+            strong{
+                font: 15px/1 'Heebo';
+                color: #000000;
+                margin-right: 20px;
+            }
+            .open{
+                font: 15px/1 'Heebo';
+                color: #cbcbcb;
+                display: inline-block;
+            }
+            .copyright{
+                font: 14px/1 'Heebo';
+                color: #cbcbcb;
+            }
+
+        }
+
+        .list{
+            text-align: right;
+
+            ul{
+                li{
+                    margin-bottom: 5px;
+                    a{
+                        font: 15px/1 'Heebo';
+                        color: #111;
+                        
+                    }
+                }
+            }
+
+        }
+    }
+}

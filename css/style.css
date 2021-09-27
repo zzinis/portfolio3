@@ -138,4 +138,67 @@ fieldset {
     width: 1180px;
     margin: 0 auto; }
 
+#footer {
+  width: 100%;
+  padding: 100px 40px; }
+  #footer .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #footer .inner .top {
+      width: 100%;
+      display: inline-block; }
+      #footer .inner .top::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #footer .inner .top h1 {
+        float: left; }
+        #footer .inner .top h1 a {
+          display: block;
+          font: bold 28px/1 'Frank Ruhl Libre';
+          color: #111;
+          margin-bottom: 30px; }
+      #footer .inner .top .sns {
+        float: right; }
+        #footer .inner .top .sns li {
+          display: inline-block;
+          margin-right: 20px; }
+          #footer .inner .top .sns li a {
+            font-size: 20px;
+            color: #000000; }
+    #footer .inner .info {
+      float: left;
+      margin-bottom: 30px; }
+      #footer .inner .info::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #footer .inner .info p {
+        font: 16px/1 'Heebo';
+        color: #000000;
+        margin-bottom: 10px; }
+      #footer .inner .info span {
+        font: 16px/1 'Heebo';
+        color: #000000;
+        display: block;
+        margin-bottom: 30px; }
+      #footer .inner .info strong {
+        font: 15px/1 'Heebo';
+        color: #000000;
+        margin-right: 20px; }
+      #footer .inner .info .open {
+        font: 15px/1 'Heebo';
+        color: #cbcbcb;
+        display: inline-block; }
+      #footer .inner .info .copyright {
+        font: 14px/1 'Heebo';
+        color: #cbcbcb; }
+    #footer .inner .list {
+      text-align: right; }
+      #footer .inner .list ul li {
+        margin-bottom: 5px; }
+        #footer .inner .list ul li a {
+          font: 15px/1 'Heebo';
+          color: #111; }
+
 /*# sourceMappingURL=style.css.map */
