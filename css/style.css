@@ -18,6 +18,234 @@ fieldset {
   display: block;
   clear: both; }
 
+#header_sub {
+  width: 100%; }
+  #header_sub .inner {
+    width: 1180px;
+    margin: 0 auto;
+    height: 120px;
+    position: relative; }
+    #header_sub .inner > h1 {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+      #header_sub .inner > h1 a {
+        font: bold 24px/1 'Frank Ruhl Libre';
+        color: #999; }
+    #header_sub .inner .menuWeb #gnb {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+      #header_sub .inner .menuWeb #gnb li {
+        display: inline-block;
+        margin-left: 15px; }
+        #header_sub .inner .menuWeb #gnb li a {
+          font: bold 15px/1 'Josefin Sans';
+          color: #444; }
+    #header_sub .inner .menuWeb .util {
+      text-align: right;
+      background: #f7e7c9; }
+      #header_sub .inner .menuWeb .util li {
+        display: inline-block;
+        margin-left: 10px; }
+        #header_sub .inner .menuWeb .util li a {
+          font: bold 16px/1 'Lora';
+          color: lightslategray; }
+    #header_sub .inner .btnCall {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      display: none; }
+      #header_sub .inner .btnCall::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #000;
+        display: block;
+        transform: rotate(0deg);
+        transition: top 0.5s 0s, transform 0.5s 0.5s; }
+      #header_sub .inner .btnCall::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #000;
+        display: block;
+        transform: rotate(0deg);
+        transition: bottom 0.5s 0s, transform 0.5s 0.5s; }
+      #header_sub .inner .btnCall span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        text-indent: -9999px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -1px;
+        transition: 0.5s; }
+      #header_sub .inner .btnCall.on::before {
+        transform: rotate(45deg);
+        top: 50%;
+        margin-top: -1px; }
+      #header_sub .inner .btnCall.on::after {
+        transform: rotate(-45deg);
+        bottom: 50%;
+        margin-bottom: -1px; }
+      #header_sub .inner .btnCall.on span {
+        transform: translateX(100%);
+        opacity: 0; }
+    #header_sub .inner .menuMo {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 300px;
+      height: 100vh;
+      background: #444;
+      transition: 0.5s;
+      padding: 35px 30px;
+      z-index: 10; }
+      #header_sub .inner .menuMo h1 {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+        margin-bottom: 60px; }
+        #header_sub .inner .menuMo h1 a {
+          display: block;
+          font: 24px/1 'Josefin Sans';
+          color: #fff;
+          text-align: center; }
+      #header_sub .inner .menuMo #gnbMo li a {
+        display: block;
+        font: 30px/1 'Josefin Sans';
+        color: #fff;
+        text-align: center;
+        margin-bottom: 35px; }
+
+.content {
+  width: 100%;
+  padding: 0 0 100px; }
+  .content .sub_visual {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 100px;
+    padding: 50px 0; }
+    .content .sub_visual h1 {
+      text-align: center;
+      width: 380px;
+      height: 28px;
+      margin: 50px auto;
+      position: relative;
+      font: 28px/1 'Lora'; }
+      .content .sub_visual h1::before {
+        content: '';
+        width: 80px;
+        height: 1px;
+        display: block;
+        background: #000;
+        position: absolute;
+        top: 14px;
+        left: 0; }
+      .content .sub_visual h1::after {
+        content: '';
+        width: 80px;
+        height: 1px;
+        display: block;
+        background: #000;
+        position: absolute;
+        top: 14px;
+        right: 0; }
+  .content .inner {
+    width: 1180px;
+    margin: 0 auto;
+    min-height: 600px;
+    position: relative; }
+    .content .inner h2 {
+      font: 30px/1 'Lora';
+      color: #fda22b;
+      margin-bottom: 20px; }
+    .content .inner p {
+      font: 15px/1 'Lora';
+      color: #aaa;
+      display: block; }
+      .content .inner p::before {
+        content: '';
+        width: 100px;
+        height: 1px;
+        display: block;
+        background: #000;
+        margin-bottom: 10px; }
+
+#footer_sub {
+  width: 100%;
+  padding: 100px 40px; }
+  #footer_sub .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #footer_sub .inner .top {
+      width: 100%;
+      display: inline-block; }
+      #footer_sub .inner .top::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #footer_sub .inner .top h1 {
+        float: left; }
+        #footer_sub .inner .top h1 a {
+          display: block;
+          font: bold 28px/1 'Frank Ruhl Libre';
+          color: #111;
+          margin-bottom: 30px; }
+      #footer_sub .inner .top .sns {
+        float: right; }
+        #footer_sub .inner .top .sns li {
+          display: inline-block;
+          margin-right: 20px; }
+          #footer_sub .inner .top .sns li a {
+            font-size: 20px;
+            color: #000000; }
+    #footer_sub .inner .info {
+      float: left;
+      margin-bottom: 30px; }
+      #footer_sub .inner .info::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #footer_sub .inner .info p {
+        font: 16px/1 'Heebo';
+        color: #000000;
+        margin-bottom: 10px; }
+      #footer_sub .inner .info span {
+        font: 16px/1 'Heebo';
+        color: #000000;
+        display: block;
+        margin-bottom: 30px; }
+      #footer_sub .inner .info strong {
+        font: 15px/1 'Heebo';
+        color: #000000;
+        margin-right: 20px; }
+      #footer_sub .inner .info .open {
+        font: 15px/1 'Heebo';
+        color: #cbcbcb;
+        display: inline-block; }
+      #footer_sub .inner .info .copyright {
+        font: 14px/1 'Heebo';
+        color: #cbcbcb; }
+    #footer_sub .inner .list {
+      text-align: right; }
+      #footer_sub .inner .list ul li {
+        margin-bottom: 5px; }
+        #footer_sub .inner .list ul li a {
+          font: 15px/1 'Heebo';
+          color: #111; }
+
 #header {
   width: 100%; }
   #header .inner {
