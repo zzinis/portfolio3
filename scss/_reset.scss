@@ -1,0 +1,19 @@
+*{ margin:0; padding:0; box-sizing: border-box;}
+ul,ol,li{ list-style:none; }
+a{ text-decoration:none; }
+fieldset {
+    border:none; 
+}
+.wrap::after {
+    content:""; 
+	display:block; 
+	clear:both;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&family=Heebo&family=Josefin+Sans&family=Lora:wght@500&family=Oswald:wght@500&display=swap');
+
+// font-family: 'Frank Ruhl Libre', serif;
+// font-family: 'Heebo', sans-serif;
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Lora', serif;
+// font-family: 'Oswald', sans-serif;
