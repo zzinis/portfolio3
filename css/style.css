@@ -371,6 +371,36 @@ fieldset {
     width: 1180px;
     margin: 0 auto; }
 
+#introduce {
+  width: 100%;
+  padding: 150px 0;
+  background: #f9f4f1; }
+  #introduce .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #introduce .inner .wrap .left {
+      float: left;
+      width: 49%;
+      margin-right: 2%;
+      padding: 150px 60px; }
+      #introduce .inner .wrap .left h1 {
+        font: bold 15px/1 'Hebo';
+        margin-bottom: 100px;
+        color: #f0a417; }
+      #introduce .inner .wrap .left p {
+        font: 600 16px/1.7 'Hebo';
+        color: #212121; }
+    #introduce .inner .wrap .right {
+      float: left;
+      width: 49%; }
+      #introduce .inner .wrap .right h2 {
+        font: bold 24px/1.4 'Josefin Sans';
+        letter-spacing: -1px;
+        margin-bottom: 50px; }
+      #introduce .inner .wrap .right img {
+        width: 700px;
+        height: 600px; }
+
 #content {
   width: 100%;
   padding: 200px 0;
