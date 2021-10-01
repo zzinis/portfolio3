@@ -28,7 +28,6 @@ $(window).on("scroll", function(){
             $btns.children("a").removeClass("on"); 
             $btns.eq(i).children("a").addClass("on"); 
 
-
         }
     }
 }); 
