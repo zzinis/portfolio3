@@ -455,12 +455,12 @@
         width: 1180px;
         margin: 0 auto;
 
-        .wrap{
+        #wrap{
             width: 50%;
 
             dt{
                 width: 100%;
-                padding: 20px;
+                padding: 16px;
                 border: 1px solid rgba(0,0,0,0.2);
                 border-radius: 50px;
                 position: relative;
@@ -495,6 +495,10 @@
 
                 &.on{
                     border: 1px solid #111;
+
+                    &::before{
+                        transform: translateY(-50%) rotate(-90deg);
+                    }
                 }
             }
             dd{
