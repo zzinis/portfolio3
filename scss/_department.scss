@@ -1,0 +1,43 @@
+#department{
+    width: 100%;
+    padding: 50px 0;
+
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+
+        p{
+            margin-bottom: 15px;
+        }
+
+        .company{
+            width: 100%;
+            position: relative;
+            
+
+            .wrap{
+                position: relative;
+
+                &::before{
+                    content: '';
+                    width: 1px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: #e3e6e9;
+                    display: block;
+
+                }
+
+                
+
+            }
+            
+
+            
+            
+        }
+    }
+}
