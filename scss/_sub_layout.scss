@@ -1,5 +1,11 @@
 #header_sub{
     width: 100%;
+
+    .top{
+        width: 100%;
+        height: 30px;
+        background: #f8f1e4;
+    }
     .inner{
         width: 1180px;
         margin: 0 auto;
@@ -29,17 +35,15 @@
 
                     a{
                         font: bold 15px/1 'Josefin Sans';
-                        // font: bold 16px/1 'Lora';
-                        // font: bold 16px/1 'Hebo';
-                        // font: 16px/1 'Frank Ruhl Libre';
                         color: #444;
                     }
                 }
             }
 
             .util{
-                text-align: right;
-                background: #f7e7c9;
+                position: absolute;
+                top: -25px;
+                right: 0;
                 
 
                 li{

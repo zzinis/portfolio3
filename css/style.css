@@ -20,6 +20,10 @@ fieldset {
 
 #header_sub {
   width: 100%; }
+  #header_sub .top {
+    width: 100%;
+    height: 30px;
+    background: #f8f1e4; }
   #header_sub .inner {
     width: 1180px;
     margin: 0 auto;
@@ -43,8 +47,9 @@ fieldset {
           font: bold 15px/1 'Josefin Sans';
           color: #444; }
     #header_sub .inner .menuWeb .util {
-      text-align: right;
-      background: #f7e7c9; }
+      position: absolute;
+      top: -25px;
+      right: 0; }
       #header_sub .inner .menuWeb .util li {
         display: inline-block;
         margin-left: 10px; }
