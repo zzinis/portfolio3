@@ -1,4 +1,4 @@
-#department{
+.department{
     width: 100%;
     padding: 50px 0;
 
@@ -6,13 +6,21 @@
         width: 1180px;
         margin: 0 auto;
 
+
         p{
-            margin-bottom: 15px;
+            margin-bottom: 30px;
         }
 
         .company{
             width: 100%;
             position: relative;
+            
+
+            h3{
+                text-align: center;
+                font: 25px/1 'Hebo';
+                margin-bottom: 50px;
+            }
             
 
             .wrap{
@@ -29,6 +37,76 @@
                     background: #e3e6e9;
                     display: block;
 
+                }
+                .timeline{
+                    position: relative;
+
+                    &:nth-of-type(even) .date{
+                        left: 50%;
+                        text-align: left;
+                    }
+                    &:nth-of-type(even) .content{
+                        margin-left: 0;
+                        text-align: right;
+                    }
+
+                    &::before{
+                        content: '';
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background: #e3e6e9;
+                        position: absolute;
+                        top: 31px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    &::after{
+                        content: '';
+                        display: block;
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 50%;
+                        background: #131517;
+                        position: absolute;
+                        top: 37px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    
+                    .date{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        text-align: right;
+                        width: 50%;
+
+
+                        p{
+                            font: 14px/1 'Hebo';
+                            color: #131517;
+                            padding: 30px;
+                            
+                        }
+                        
+                    }
+
+                    .content{
+                        margin-left: 50%;
+                        width: 50%;
+                        padding: 30px;
+
+                        h4{
+                            font: 16px/1 'Hebo';
+                            color: #131517;
+                            margin-bottom: 10px;
+                        }
+                        span{
+                            font: 14px/1.4 'Hebo';
+                            color: #7c7c7c;
+                        }
+                    }
                 }
 
                 
