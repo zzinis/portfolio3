@@ -18,6 +18,11 @@ fieldset {
   display: block;
   clear: both; }
 
+.h {
+  position: absolute;
+  top: -9999px;
+  opacity: 0; }
+
 #header_sub {
   width: 100%; }
   #header_sub .top {
@@ -179,7 +184,8 @@ fieldset {
     .content .inner > p {
       font: 15px/1 'Lora';
       color: #aaa;
-      display: block; }
+      display: block;
+      margin-bottom: 50px; }
       .content .inner > p::before {
         content: '';
         width: 100px;
@@ -252,8 +258,9 @@ fieldset {
           color: #111; }
 
 .department {
-  width: 100%;
-  padding: 50px 0; }
+  width: 100%; }
+  .department .sub_visual {
+    background: #7c7c7c; }
   .department .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -371,6 +378,62 @@ fieldset {
             display: block;
             color: #7c7c7c;
             margin-right: 40px; }
+
+.community .sub_visual {
+  background: #ececec; }
+.community .inner table {
+  width: 100%;
+  border-top: 2px solid #111;
+  margin-bottom: 50px;
+  border-collapse: collapse; }
+  .community .inner table tr th {
+    background: #666;
+    color: #fff;
+    padding: 10px; }
+  .community .inner table tr td {
+    padding: 17px;
+    border-bottom: 1px solid #bbb;
+    text-align: center;
+    font: 15px/1 'Hebo'; }
+    .community .inner table tr td a {
+      font: 16px/1 'Hebo';
+      color: #333; }
+    .community .inner table tr td:nth-of-type(2) {
+      text-align: left; }
+  .community .inner table tr:hover td {
+    background: #eeeded; }
+  .community .inner table tr:hover td {
+    background: #eeeded; }
+.community .inner .pagination {
+  width: 100%;
+  text-align: center;
+  position: relative; }
+  .community .inner .pagination::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .community .inner .pagination .prev, .community .inner .pagination .next {
+    display: inline-block;
+    font: 20px/30px 'Hebo';
+    color: #666;
+    text-align: center;
+    vertical-align: middle; }
+  .community .inner .pagination .numbers {
+    display: inline-block;
+    text-align: center;
+    font-size: 0; }
+    .community .inner .pagination .numbers a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      font: 11px/30px 'Hebo';
+      color: #666;
+      text-align: center;
+      margin: 0 5px;
+      transition: 0.5s; }
+      .community .inner .pagination .numbers a:hover {
+        border-bottom: 1px solid #bbb;
+        font: bold 13px/30px 'Hebo'; }
 
 #header {
   width: 100%; }
