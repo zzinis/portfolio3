@@ -584,7 +584,7 @@ fieldset {
     #header .inner .menuMo {
       position: fixed;
       top: 0;
-      right: -300px;
+      left: -300px;
       width: 300px;
       height: 100vh;
       background: #444;
@@ -606,6 +606,8 @@ fieldset {
         color: #fff;
         text-align: center;
         margin-bottom: 35px; }
+      #header .inner .menuMo.on {
+        left: 0; }
 
 #visual {
   width: 100%;

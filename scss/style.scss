@@ -141,7 +141,7 @@
         .menuMo{
             position: fixed;
             top: 0;
-            right: -300px;
+            left: -300px;
             width: 300px;
             height: 100vh;
             background: #444;
@@ -175,6 +175,10 @@
                         
                     }
                 }
+            }
+
+            &.on{
+                left: 0;
             }
         }
     }
@@ -724,7 +728,7 @@
             .btnCall{
                 display: block;
             }
-    
+
         }
     }
     
