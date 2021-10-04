@@ -59,6 +59,60 @@
         <div class="inner">
             <h2>Join</h2>
             <p>Lorem, ipsum.</p>
+
+            <form action="/" method="post">
+                <fieldset>
+                    <legend class="h">회원가입양식폼</legend>
+
+                    <h2>
+                        <label for="terms">회원 약관 (필수)</label>
+                    </h2>
+                    <div class="agreement">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree">약관에 동의합니다</label>
+                    </div>
+                    <textarea name="terms" id="terms" cols="30" rows="10" spellcheck="false">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum assumenda, dolores optio eius ea quia nobis quaerat laudantium praesentium ipsa architecto animi molestias maiores possimus at. Adipisci, assumenda quis eveniet eius porro dicta, repudiandae temporibus hic dolor odit animi esse! Quaerat libero iste, consequuntur enim saepe recusandae dolores, adipisci voluptatem ratione, quo asperiores distinctio. Modi odio eligendi aut eveniet ipsum!
+                    </textarea>
+                    
+                    <h3>기본정보입력</h3>
+                    <table summury="회원 이름, 휴대폰 번호">
+                        <caption class="h">회원정보 입력양식 테이블</caption>
+
+                        <tr>
+                            <th scope="row"><label for="username">이름</label></th>
+                            <td>
+                                <input type="text" name="username" id="username" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"><label for="userid">아이디</label></th>
+                            <td>
+                                <input type="text" name="userid" id="userid" required>
+                                <a href="#" class="btn">중복확인</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"><label for="pwd">비밀번호</label></th>
+                            <td>
+                                <input type="password" name="pwd" id="pwd" required>
+                                <p class="pwd1">영문, 숫자, 특수문자 중 2종류 이상 10자 ~ 12자 이내</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="pwd2">비밀번호</label></th>
+                            <td>
+                                <input type="password" name="pwd2" id="pwd2" required>
+                                <p class="pwd1">확인을 위해 한번 더 입력하시기 바랍니다.</p>
+                            </td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+            
+            </form>
         </div>
     </section>
 
