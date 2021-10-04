@@ -532,7 +532,7 @@ fieldset {
     #header .inner .btnCall {
       position: absolute;
       top: 50%;
-      right: 0px;
+      right: 20px;
       transform: translateY(-50%);
       width: 20px;
       height: 20px;
@@ -945,5 +945,18 @@ fieldset {
       #navi li a.on {
         background: #111;
         height: 30px; }
+
+@media screen and (max-width: 1179px) {
+  #header .inner {
+    width: 100%; }
+    #header .inner > h1 {
+      bottom: 0;
+      left: 30px; }
+    #header .inner .menuWeb #gnb {
+      display: none; }
+    #header .inner .menuWeb .util {
+      right: 20px; }
+    #header .inner .btnCall {
+      display: block; } }
 
 /*# sourceMappingURL=style.css.map */
