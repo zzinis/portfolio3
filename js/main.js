@@ -9,7 +9,6 @@ for(let i=0; i<len; i++){
     posArr.push($boxs.eq(i).offset().top);     
 }
 
-
 $(window).on("resize", function(){
     posArr = []; 
     for(let i=0; i<len; i++){
@@ -18,7 +17,6 @@ $(window).on("resize", function(){
 
     console.log(posArr); 
 });
-
 
 
 $(window).on("scroll", function(){
@@ -32,7 +30,6 @@ $(window).on("scroll", function(){
     }
 }); 
 
-
 $("#navi li a").on("click", function(e){
     e.preventDefault(); 
 
@@ -45,8 +42,6 @@ $("#navi li a").on("click", function(e){
     $("html, body").animate({
         scrollTop : targetPos
     },1000);
-
-    
 });
 
 
